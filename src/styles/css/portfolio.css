@@ -1,0 +1,168 @@
+.seccion {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.dark .seccion {
+  background-color: #1c1c1c;
+}
+
+.contenido-seccion {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.dark .subtitulo-seccion {
+  color: #ccc;
+}
+
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.card-proyecto {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.card-proyecto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-proyecto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.info-proyecto {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-proyecto h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.dark .info-proyecto h3 {
+  color: #f0f0f0;
+}
+
+.info-proyecto p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 10px 0;
+  flex-grow: 1;
+}
+
+.dark .info-proyecto p {
+  color: #aaa;
+}
+
+
+.btn-proyecto {
+  background-color: var(--primary-color, #007bff);
+  color: white;
+  padding: 10px 16px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-proyecto:hover {
+  background-color: var(--primary-dark, #0056b3);
+  color: white;
+}
+
+.dark .btn-proyecto {
+  background-color: #1e90ff;
+}
+
+.dark .btn-proyecto:hover {
+  background-color: #0070d1;
+}
+
+
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    justify-content: center;
+  }
+
+  .card-proyecto {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-proyecto {
+    width: 90%;
+  }
+
+  .contenido-seccion {
+    padding: 0 10px;
+  }
+
+  .titulo-seccion {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo-seccion {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-proyecto {
+    width: 100%;
+  }
+
+  .btn-proyecto {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .info-proyecto h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-proyecto p {
+    font-size: 0.9rem;
+  }
+}

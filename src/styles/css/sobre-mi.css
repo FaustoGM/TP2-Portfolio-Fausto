@@ -1,0 +1,33 @@
+.sobre-mi-section {
+  padding: 60px 20px;
+  background-color: var(--bg-color);
+}
+
+.sobre-mi-section .titulo-seccion {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.sobre-mi-section .descripcion {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark .sobre-mi-section {
+  background-color: var(--card-bg);
+}
+
+.dark .sobre-mi-section .descripcion {
+  color: #ccc;
+}
+
+.dark .sobre-mi-section .titulo-seccion {
+  color: #fff;
+}

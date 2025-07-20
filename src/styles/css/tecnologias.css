@@ -1,0 +1,45 @@
+.seccion {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+
+.iconos-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.iconos-tecnologias img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.iconos-tecnologias img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+
+.dark .iconos-tecnologias img:hover {
+  background-color: #333;
+}

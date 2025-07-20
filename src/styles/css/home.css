@@ -1,0 +1,81 @@
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  text-align: center;
+}
+
+.home-content {
+  max-width: 700px;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.home-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.dark .home-section {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.dark .home-subtitle,
+.dark .home-description {
+  color: #ccc;
+}
+
+.typewriter-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #333;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  color: #444;
+  animation: blink 0.7s step-end infinite;
+}
+
+body.dark .typewriter {
+  color: #f6d365;
+  border-color: #f6d365;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #333 }
+}

@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+  }
+  
+  .dark {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  .dark a {
+    color: #90ee90;
+  }
+  
+  .dark .navbar {
+    background-color: #2c2c2c;
+  }
+  
+  :root {
+    --bg-color: #f9f9f9;
+    --text-color: #222;
+    --card-bg: white;
+    --primary-color: #007bff;
+    --primary-dark: #0056b3;
+  }
+  
+  .dark {
+    --bg-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --card-bg: #2c2c2c;
+    --primary-color: #66b2ff;
+    --primary-dark: #3385cc;
+  }
+  .seccion {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+
+.titulo-seccion {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.barra-seccion {
+    width: 50px;
+    height: 4px;
+    background-color: #d3ff35;
+    margin: 0 auto 30px;
+    border-radius: 2px;
+  }
+  
+  
+  .formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+  }
+  
+  .formulario-contacto input:focus,
+  .formulario-contacto textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .formulario-contacto button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-contacto button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 0.9s ease-out forwards;
+}
+
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.9s ease-out forwards;
+}
+
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideInRight 0.9s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
